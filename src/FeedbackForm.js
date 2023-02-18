@@ -25,7 +25,7 @@ function FeedbackForm({onSubmit}) {
     <div className="App">
       <form onSubmit={handleSubmit}>
         <fieldset>
-          <h2>Review Feedback form</h2>
+          <h2>Review Feedback Form</h2>
           <div className="Field">
             <label htmlFor="score">Score: {score} ⭐</label>
             <input
