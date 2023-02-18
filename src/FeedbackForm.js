@@ -10,11 +10,10 @@ function FeedbackForm({onSubmit}) {
 
   let textAreaPlaceholder = isDisabled
     ? "Please provide a comment explaining why your experience was not good. Minimum length is 10 characters."
-    : "Please Leave a feedback";
+    : "Please Leave a feedback (optional).";
 
-    if (score >= 9) {
-      textAreaPlaceholder = "Great!, tell us what you liked about it."
-    }
+    score >= 8 ? textAreaPlaceholder = "Great!, tell us what you liked about it." : null;
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
