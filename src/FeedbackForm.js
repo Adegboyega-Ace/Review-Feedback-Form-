@@ -14,6 +14,7 @@ function FeedbackForm({onSubmit}) {
 
     score >= 8 ? textAreaPlaceholder = "Great!, tell us what you liked about it." : null;
 
+    const stars = "⭐".repeat(score);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,7 +27,7 @@ function FeedbackForm({onSubmit}) {
         <fieldset>
           <h2>Review Feedback Form</h2>
           <div className="Field">
-            <label htmlFor="score">Score: {score} ⭐</label>
+            <label htmlFor="score">Score: {score} {stars} </label>
             <input
               id="score"
               value={score}
